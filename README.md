@@ -2,7 +2,9 @@
 
 **AIM:**
 
-To implement  D flipflop using verilog and validating their functionality using their functional tables
+To implement  D flipflop using verilog and validating their functionality using their functional tables\
+
+**DATE :** 12.11.25
 
 **SOFTWARE REQUIRED:**
 
@@ -31,14 +33,29 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 /* write all the steps invloved */
 
 **PROGRAM**
-
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+```
+Developed by: Sandhiya M
+RegisterNumber: 212224220086
+```
+```
+module Dflipflop(D, clock, Q, Qbar);
+input D, clock;
+output reg Q, Qbar;
+always @(negedge clock)
+begin
+Q = D;
+Qbar = ~D;
+end
+endmodule
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
+<img width="848" height="685" alt="Dflipflop logic" src="https://github.com/user-attachments/assets/954589b5-9de1-44f7-92cc-d5cc42dd3b99" />
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+<img width="1919" height="434" alt="Dflipflop waveform" src="https://github.com/user-attachments/assets/0b0589d8-05de-4faa-ae80-e78dbf96ffaa" />
 
 
 **RESULTS**
+Implementation of D flipflop using verilog and validating their functionality using their functional tables was successfully done.
